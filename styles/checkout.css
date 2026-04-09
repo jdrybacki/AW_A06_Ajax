@@ -1,0 +1,48 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: white;
+    width: 95%;
+    max-width: 465px;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 0 2em 1em;
+}
+main{
+	display: flex;
+	padding-bottom:3em;
+	flex-direction: column;
+}
+header {
+	text-align: center;
+	border-bottom: 3px solid aqua;}
+h1 { 
+    font-size: 150%;
+    margin-bottom: .5em;
+}
+h2 {
+	font-size: 140%;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: .2em;
+}
+@media only screen and (max-width: 767px) {
+	
+	body{
+		border: none;
+		border-radius: 0;
+		padding: 0 2em;
+		
+	}
+	header{
+		width:95%;
+		border-bottom: none;
+		
+	}
+   
+	header img{
+		width:95%;
+	}
+	
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tuxedo Cat Coffee</title>
+    <base href="../">
+    <link type="text/css" rel="stylesheet" href="styles/checkout.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const getElement = (selector) => document.querySelector(selector);
+            console.log(`in checkout: ${sessionStorage.total}`)
+            console.log(getElement("#sessionTotal"));
+
+            getElement("#sessionTotal").textContent = parseFloat(sessionStorage.total).toFixed(2);
+
+        });
+
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Tuxedo Cat Coffee"/>
+    </header>
+    <main>
+        
+            <h1>Thank you!</h1>
+            <p>Thank you for visiting Tuxedo Cat Coffee.</p>
+			<p>Your total is: $<span id="sessionTotal">&nbsp;</span></p>
+            <br>
+            <a href="index.html">Return to menu (this clears the total)</a>
+
+    </main> 
+</body>
+</html>

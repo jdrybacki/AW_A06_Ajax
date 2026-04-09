@@ -1,0 +1,132 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: white;
+	width: 95%;
+    max-width: 465px;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 0 2em 1em;
+}
+header {
+	/* text-align: center; */
+	border-bottom: 3px solid aqua;
+}
+
+main{
+	display: flex;
+	padding-bottom:3em;
+}
+section#menu{
+	flex-basis: 100%; 
+}
+/* section#your_order{ */
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* padding-bottom:3em; */
+/* } */
+section#your_order h2{
+	width: 100%;
+}
+
+h1 { 
+    font-size: 150%;
+    margin-bottom: .5em;
+}
+h2 {
+	font-size: 140%;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: .2em;
+}
+select {
+	/* the order shows in here */
+	width:100%;
+	font-size: 110%;
+	text-indent: .5em;
+}
+span{
+	color: red;
+	font-weight: bolder;
+	font-style: italic;
+}
+#menu h2 {
+	padding-top: 1em;
+
+}
+#menu p {
+	margin-top: 0;
+	margin-bottom: .7em;
+}
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+}
+ul li {
+	display: inline;
+    padding: 5px 0 5px 0;
+}
+#total {
+	margin-top: .5em;
+	margin-bottom: .7em;
+}
+button {
+    width: 10em;
+    margin-right: 1em;
+}
+button:first-of-type{
+	margin-left: 5em;
+}
+section#buttons {
+	margin-top: 0;
+}
+@media only screen and (max-width: 767px) {
+	
+	body{
+		border: none;
+		border-radius: 0;
+		padding: 0 2em;
+		
+	}
+	header{
+		width:95%;
+		border-bottom: none;
+		
+	}
+    main {
+        flex-direction: column;
+    }
+	header img{
+		width:95%;
+	}
+	section#menu p{
+		font-size:90%;
+	}
+	section#menu h2{
+		font-size:120%;
+	}
+	section#menu ul{
+		padding-left: .5em;
+		justify-content: flex-start; 
+		flex-basis: auto;
+		flex-wrap:wrap;
+		padding-top:.5625em;
+	}
+
+	select {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	header h1{
+		font-size: 120%;
+	}
+	select {
+		width: 89%;
+	}
+
+}
+

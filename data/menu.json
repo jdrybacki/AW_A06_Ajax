@@ -1,0 +1,38 @@
+[
+	{
+		"item": "Espresso",
+		"display_cost": "$1.95",
+		"price": "1.95",
+		"image": "images/espresso_info.jpg"
+	},
+	{
+		"item": "Latte",
+		"display_cost": "$2.95",
+		"price": "2.95",
+		"image": "images/latte_info.jpg"
+	},
+	{
+		"item": "Cappuccino",
+		"display_cost": "$3.45",
+		"price": "3.45",
+		"image": "images/cappuccino_info.jpg"
+	},
+	{
+		"item": "Drip Coffee",
+		"display_cost": "$1.75",
+		"price": "1.75",
+		"image": "images/coffee_info.jpg"
+	},
+	{
+		"item": "Biscotti",
+		"display_cost": "$1.95",
+		"price": "1.95",
+		"image": "images/biscotti_info.jpg"
+	},
+	{
+		"item": "Scone",
+		"display_cost": "$2.95",
+		"price": "2.95",
+		"image": "images/scone_info.jpg"
+	}
+]

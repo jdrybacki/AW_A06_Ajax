@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Tuxedo Cat Coffee</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="styles/cafe.css">
+	<script type="text/javascript" src="js/cafe_js_then.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="images/logo.png" alt="Tuxedo Cat Coffee" />
+	</header>
+	<main>
+		<!-- action="/data/menu.json" -->
+		<form id="order_form" name="order_form" action="pages/checkout.html" method="get">
+			<section id="menu">
+				<h2>Menu</h2>
+				<p>Click an item to add it to your order.</p>
+				<ul>
+					<li><a href="#"><img class="hoverMe" id="images/espresso_info.jpg" src="images/espresso.jpg"
+								alt="espresso" /></a></li>
+					<li><a href="#"><img class="hoverMe" id="images/latte_info.jpg" src="images/latte.jpg"
+								alt="latte" /></a></li>
+					<li><a href="#"><img class="hoverMe" id="images/cappuccino_info.jpg" src="images/cappuccino.jpg"
+								alt="cappuccino" /></a></li>
+					<li><a href="#"><img class="hoverMe" id="images/coffee_info.jpg" src="images/coffee.jpg"
+								alt="coffee" /></a></li>
+					<li><a href="#"><img class="hoverMe" id="images/biscotti_info.jpg" src="images/biscotti.jpg"
+								alt="biscotti" /></a></li>
+					<li><a href="#"><img class="hoverMe" id="images/scone_info.jpg" src="images/scone.jpg"
+								alt="scone" /></a></li>
+				</ul>
+			</section>
+
+			<section id="your_order">
+				<h2>Your Order</h2>
+				<span id="message"></span>
+				<section id="area">
+					<select id="order" name="order" size="6"></select>
+					<p id="total">&nbsp;</p>
+					<span id="message"></span>
+				</section>
+
+				<section id="buttons">
+					<button name="place_order" id="place_order">Place Order</button>
+					<button name="clear_order" id="clear_order">Clear Order</button>
+				</section>
+			</section>
+		</form>
+	</main>
+</body>
+
+</html>
